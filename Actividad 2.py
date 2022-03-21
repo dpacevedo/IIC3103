@@ -1,16 +1,15 @@
 from flask import *
 import json,requests
-
+#Actividad 2
 app = Flask(__name__)
 
 @app.route('/status',methods =['GET'])
 def home_page():
-	status_code = Response(status=204)
-	return status_code
+	return 
 
 @app.route('/info',methods =['GET'])
 def info_page():
-    url = "https://hola"
+    url = "https://actividad-2-iic3103-dp.herokuapp.com/"
     data_set = {'url': url }
     json_dump = json.dumps(data_set)
     return json_dump
