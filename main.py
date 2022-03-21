@@ -5,7 +5,8 @@ app = Flask(__name__)
 
 @app.route('/status',methods =['GET'])
 def home_page():
-	return 
+	status_code = Response(status=204)
+    return status_code 
 
 @app.route('/info',methods =['GET'])
 def info_page():
